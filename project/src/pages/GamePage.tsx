@@ -248,7 +248,7 @@ const GamePage = () => {
       var utimeTaken = 1000-uscore;
 
       try {
-        const response = await fetch(`${import.meta.env.VITE_BCK_URL}}/scores/update_user_score/`, {
+        const response = await fetch(`${import.meta.env.VITE_BCK_URL}/scores/update_user_score/`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
