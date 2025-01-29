@@ -20,6 +20,7 @@ FRONTEND_PORT = os.getenv("FRONTEND_PORT", "5173")  # Default to 5173 if not set
 origins = [
     f"http://localhost:{FRONTEND_PORT}",  
     f"http://127.0.0.1:{FRONTEND_PORT}",
+    "https://set-sudoku.vercel.app/"
 ]
 
 app.add_middleware(
