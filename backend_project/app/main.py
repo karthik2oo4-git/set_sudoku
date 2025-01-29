@@ -30,6 +30,9 @@ app.add_middleware(
     allow_headers=["*"],    
 )
 
+@app.get("/")
+async def root():
+    return {"message": "FastAPI app is up and running!"}
 # Add routes
 app.include_router(user_router)
 
